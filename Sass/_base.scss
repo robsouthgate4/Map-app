@@ -1,0 +1,53 @@
+
+/* ***** BASE STYLES ***** */
+
+
+ h1 {
+	font-size: 30px;
+ }
+ h2 {
+	font-size: 20px;
+ }
+ h3 {
+	font-size: 18px;
+ }
+ h4 {
+	font-size: 16px;
+ }
+ p {
+	font-size: 14px;
+ }
+ a {
+ 	
+ }
+
+ * {
+     //outline: 1px solid red;
+ }
+
+ *:focus {
+    outline: 0;
+}
+
+.margin-bottom-30 {
+	margin-bottom: 30px;
+}
+
+.width-fluid {
+	width: 100%;
+}
+
+.no-border {
+	border: 0 !important;
+}
+
+.no-padding {
+	padding: 0 !important;
+}
+
+.padding-30 {
+	padding: 30px;
+}
+.padding-20 {
+    padding: 20px;
+}

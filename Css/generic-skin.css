@@ -1,0 +1,100 @@
+/* -------------------------------- */
+/* Custom fonts
+/* -------------------------------- */
+/* ******************************** */
+/* trade-gothic-bold
+/* ******************************** */
+@font-face {
+  font-family: 'trade-gothic-bold';
+  src: url("../Fonts/trade-gothic-bold.eot");
+  src: url("../Fonts/trade-gothic-bold.eot?#iefix") format("embedded-opentype"), url("../Fonts/trade-gothic-bold.woff") format("woff"), url("../Fonts/trade-gothic-bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+/* ***** BASE STYLES ***** */
+h1 {
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+p {
+  font-size: 14px;
+}
+
+*:focus {
+  outline: 0;
+}
+
+.margin-bottom-30 {
+  margin-bottom: 30px;
+}
+
+.width-fluid {
+  width: 100%;
+}
+
+.no-border {
+  border: 0 !important;
+}
+
+.no-padding {
+  padding: 0 !important;
+}
+
+.padding-30 {
+  padding: 30px;
+}
+
+.padding-20 {
+  padding: 20px;
+}
+
+.main-body-wrapper {
+  position: relative;
+}
+
+.site-header-wrapper {
+  background: #4A89DC;
+}
+
+.map-container {
+  float: left;
+  width: 100%;
+}
+
+.site-header {
+  paddin-top: 40px;
+  padding-bottom: 40px;
+}
+
+.filters {
+  padding: 20px 0;
+}
+
+.info-container {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #fff;
+}
+.info-container #close-info {
+  float: right;
+}
+.info-container table {
+  display: none;
+  margin-top: 30px;
+}
+.info-container table tr td:last-child {
+  word-break: break-all;
+}

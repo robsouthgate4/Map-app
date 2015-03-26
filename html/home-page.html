@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no">
+		<title>Map application</title>
+        <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="../libraries/bootstrap/3.0.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../libraries/bootflat/bootflat.css">
+		<link rel="stylesheet" href="../Css/generic-skin.css">		
+	    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css">
+		<script src="https://code.jquery.com/jquery-1.11.2.js"></script>
+		<script src="../libraries/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js" type="text/javascript"></script>
+        <script src="../scripts/markerclusterer.js" type="text/javascript"></script>
+
+		<script src="../scripts/site.script.js"></script>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	</head>
+	<body onload="">
+        <!-- Site header wrapper starts -->
+        <header class="site-header-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="site-header">
+                            <div class="filters">
+                                <div class="form form-inline">
+                                    <div class="form-group pull-right">
+                                        <label for="quakeRange"></label>
+                                        <input id="quakeRange" type="range" name="points" min="3" max="10" value="5">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Site header wrapper ends -->
+        <section class="main-body-wrapper">
+
+            <div class="info-container pull-left panel panel-warning">
+
+                    <button id="close-info">X</button>
+
+                <div class="padding-20">
+                    <h3 class="panel-title">
+                        Earthquake information
+                    </h3>
+                </div>
+                <div class="panel-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam assumenda consectetur corporis cupiditate eum nobis officia, qui! Ab deleniti dolor eius hic ipsa itaque, laborum laudantium repellendus tenetur veniam? Nisi?</p>
+                    <table class="data-table table table-striped">
+
+                    </table>
+                </div>
+
+            </div>
+            <div class="map-container pull-left">
+                <div id="map"></div>
+            </div>
+
+        </section>
+        <!-- Site footer starts -->
+        <footer class="site-footer-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Site footer ends -->
+        <script src="../scripts/map2.js"></script>
+        <script>
+           $(window).load(function(){
+               map.init();
+           });
+        </script>
+	</body>
+</html>

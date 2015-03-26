@@ -1,0 +1,63 @@
+// ---------------- MIXINS ------------------ //
+
+@mixin transition($transition-property, $transition-time, $method) {
+	-webkit-transition: $transition-property $transition-time $method;
+	-moz-transition: $transition-property $transition-time $method;
+	-ms-transition: $transition-property $transition-time $method;
+	-o-transition: $transition-property $transition-time $method;
+	transition: $transition-property $transition-time $method; }
+
+@mixin box-shadow($top, $left, $blur, $radius, $color, $inset:"") {
+ 	-webkit-box-shadow:$top $left $blur $radius $color #{$inset};
+ 	-moz-box-shadow:$top $left $blur $radius $color #{$inset};
+ 	-ms-box-shadow:$top $left $blur $radius $color #{$inset};
+ 	-o-box-shadow:$top $left $blur $radius $color #{$inset};
+ 	box-shadow:$top $left $blur $radius $color #{$inset};
+}
+
+@mixin border-radius($radius) {
+  	-webkit-border-radius: $radius;
+  	-moz-border-radius: $radius;
+  	-ms-border-radius: $radius;
+  	-o-border-radius: $radius;
+  	border-radius: $radius;
+  	background-clip: padding-box;  /* stops bg color from leaking outside the border: */
+}
+
+@mixin transform($transforms) {
+   	-moz-transform: $transforms;
+ 	  -o-transform: $transforms;
+    -ms-transform: $transforms;
+    -webkit-transform: $transforms;
+  	transform: $transforms;
+}
+
+@mixin transform-origin ($origin) {
+    -moz-transform-origin: $origin;
+     -o-transform-origin: $origin;
+    -ms-transform-origin: $origin;
+	   -webkit-transform-origin: $origin;
+  	transform-origin: $origin;
+}
+
+@mixin perspective($val) {
+  -webkit-perspective: $val;
+  -moz-perspective: $val;
+  -ms-perspective: $val;
+  perspective: $val;
+} 
+
+
+@mixin transform-style($val) {
+  -webkit-transform-style: $val;
+  -moz-transform-style: $val;
+  -ms-transform-style: $val;
+  transform-style: $val;
+}
+
+@mixin backface-visibility( $style: visible ) {
+  @each $prefix in -moz, -ms, -o, -webkit {
+  #{$prefix}-backface-visibility: $style;
+  }
+  backface-visibility: $style;
+}  
